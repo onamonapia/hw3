@@ -1,4 +1,6 @@
+// the saved list of movies 
 const movieList = [];
+// the html list element that will display movies
 const showMovieList = document.getElementById("movieList");
 
 document.addEventListener("DOMContentLoaded", function (event) {
@@ -28,6 +30,7 @@ function enterMovie() {
     //console.log(movieList);
 }
 
+// Will show all of the inputted movies on the HTML page.
 function showMovies() {
     
     showMovieList.innerHTML = "";
