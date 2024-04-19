@@ -3,20 +3,40 @@
     <head>
         <meta charset="utf-8">
         <title>Homework 3</title>
-    </head>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    </head>
     <body>
-        <label for="movieName">Movie Name:</label>
-        <input type="text" id="movieName" name="movieName"><br>
-        <label for="movieRating">Movie's Rating:</label>
-        <input type="text" id="movieRating" name="movieRating"><br>
-        <label for="movieYear">Movie's Year:</label>
-        <input type="text" id="movieYear" name="movieYear"><br>
-        <button id="enter" type="button">Add Movie</button>
-        <button id="show" type="button">Show Movies</button>
-        <ul id="movieList"></ul>
+        <h1>Movie List</h1><br>
+        <div class="input">
+            <label for="movieName">Movie Name:</label>
+            <input type="text" id="movieName" name="movieName"><br>
+        </div>
+        <div class="input">
+            <label for="movieRating">Movie's Rating:</label>
+            <input type="text" id="movieRating" name="movieRating"><br>
+        </div>
+        <div class="input">
+            <label for="movieYear">Movie's Year:</label>
+            <input type="text" id="movieYear" name="movieYear"><br>
+        </div>
+        <div id="buttons">
+            <button id="enter" type="button">Add Movie</button>
+            <button id="show" type="button">Show Movies</button>
+        </div>
 
+        <div id="list">
+            <ul id="movieList"></ul>
+        </div>
         <script src="Movie.js"></script>
         <script src="index.js"></script>
 
+
+        <footer>
+            <h3>Fonts used:</h3>
+            <ul>
+                <li><cite>Roboto</cite> via <a href="https://fonts.google.com/specimen/Roboto">Google Fonts</a></li>
+                <li><cite>Permanent Marker</cite> via <a href=https://fonts.google.com/specimen/Permanent+Marker">Gogole Fonts</a></li>
+            </ul>
+        </footer>
     </body>
 </html>

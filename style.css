@@ -1,0 +1,66 @@
+* {
+    background-color: #ff80ff;
+    color: #000061;
+    margin: auto;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    font-family: "Permanent Marker", cursive;
+    background-color: white;
+    max-width: 50%;
+    border: 5px solid black;
+}
+
+
+.input {
+    border: 5px solid black;
+    max-width: 50%;
+    max-height: 50%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+
+input {
+    background-color: white;
+}
+
+#buttons {
+    margin-top: 20px;
+}
+
+ul {
+    max-width: 50%;
+    list-style-type: none;
+    list-style-position: outside;
+    margin-top: 50px;
+    padding: 0;
+    
+}
+
+
+button {
+    background-color: white;
+}
+
+/* Doing the footer all in one go didn't
+work for the font size. */
+footer li {
+    font-size: 12px;
+}
+footer ul {
+    margin-top: 0px;
+}
+cite {
+    font-size: 12px;
+}
+
+h3 {
+    font-size: 12px;
+}
+footer a {
+    color: black;
+    font-size: 12px;
+}
