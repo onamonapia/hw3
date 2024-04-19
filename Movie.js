@@ -13,7 +13,7 @@ let Movie = function(name, rating, year) {
         this.year = parseInt(year);
     }
     catch(e) {
-        console.log(e + "\n Rating: " + rating + " Year: " + year);
+        //console.log(e + "\n Rating: " + rating + " Year: " + year);
         throw e;
     }
 }
@@ -66,3 +66,23 @@ Movie.prototype.toString = function() {
     return "Movie: " + this.name + ", Rating: " + this.rating + ", Year: " + this.year;
 }
 
+
+// Comparison method
+// don't know enough about javascript to know why this isn't working.
+// Requires: a movie object
+// Returns: 1 if this movie has a higher rating than the input movie, 
+// -1 if this movie has a lower rating than the input movie, and 
+// the opposite of its string comparison for its name if they have equal ratings.
+Movie.prototype.compareFn = function(movie2) {
+    if (this.rating > movie2.rating) {
+        return 1;
+    }
+    else if (this.rating < movie2.rating) {
+        return -1;
+    }
+    else {
+        console.log(this.name.localeCompare(movie2.name));
+        return ((this.name.localeCompare(movie2.name)) * -1);
+
+    }
+}

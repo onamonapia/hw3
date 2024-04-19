@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 // Adds a new Movie object to the movie list.
 function enterMovie() {
     let movieName = document.getElementById("movieName").value;
-    let movieRating = document.getElementById("movieRating").valueAsNumber;
-    console.log(typeof(movieRating));
-    let movieYear = document.getElementById("movieYear").valueAsNumber;
+    let movieRating = parseInt(document.getElementById("movieRating").value);
+    //console.log(typeof(movieRating));
+    let movieYear = parseInt(document.getElementById("movieYear").value);
 
     try {
         let newMovie = new Movie(movieName, movieRating, movieYear);
@@ -29,8 +29,9 @@ function enterMovie() {
 }
 
 function showMovies() {
+    
     showMovieList.innerHTML = "";
-    for (let i = 0; i < movieList.length; i++) {
+    for (let i = movieList.length - 1; i >= 0; i--) {
         let item = document.createElement("li");
         item.textContent = movieList[i].toString();
         showMovieList.appendChild(item);        
